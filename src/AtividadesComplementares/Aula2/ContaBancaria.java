@@ -1,9 +1,9 @@
 package AtividadesComplementares.Aula2;
 
 public class ContaBancaria {
-    String titular = "";
-    double numeroConta = 0.00;
-    int saldo = 0;
+    String titular;
+    double numeroConta;
+    int saldo;
 
     public String getTitular() {
         return titular;

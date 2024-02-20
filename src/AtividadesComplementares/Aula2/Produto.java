@@ -1,8 +1,8 @@
 package AtividadesComplementares.Aula2;
 
 public class Produto {
-    private String nome = "";
-    private double preco = 0;
+    private String nome;
+    private double preco;
 
     public String getNome() {
         return nome;

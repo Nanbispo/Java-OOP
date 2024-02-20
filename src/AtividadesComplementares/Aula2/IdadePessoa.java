@@ -1,8 +1,8 @@
 package AtividadesComplementares.Aula2;
 
 public class IdadePessoa {
-    private String pessoa = "";
-    private int idade = 0;
+    private String pessoa;
+    private int idade;
 
     public String getPessoa() {
         return pessoa;

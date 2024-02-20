@@ -1,32 +1,31 @@
 package com.alura.ScreenMatch;
 
-import com.alura.ScreenMatch.Models.Movie;
+import com.alura.ScreenMatch.Calculate.timeCalculator;
+import com.alura.ScreenMatch.Models.Movies;
+import com.alura.ScreenMatch.Models.Series;
 
 public class Main {
     public static void main(String[] args) {
-        Movie myMovie = new Movie();
+        Movies avatar = new Movies();
+        avatar.setName("Avatar");
+        avatar.setDurationInMinutes(180);
 
-        myMovie.setName("O poderoso chefão");
-        myMovie.setReleaseYear(1970);
+        Movies ophehaimer = new Movies();
+        ophehaimer.setName("Ophehaimer");
+        ophehaimer.setDurationInMinutes(90);
 
-        myMovie.displaysTechnicalSheet();
+        Series suits = new Series();
+        suits.setName("Suits");
+        suits.setSeasons(10);
+        suits.setEpisodesPerSeason(20);
+        suits.setDurationInMinutes(50);
+        System.out.println("Tempo para maratonar suits "+ suits.getDurationInMinutes());
 
+        timeCalculator calculator = new timeCalculator();
+        calculator.inclued(avatar);
+        calculator.inclued(ophehaimer);
+        calculator.inclued(suits);
 
-
-
-        myMovie.setDurationInMinutes(180);
-        myMovie.evaluate(8);
-        myMovie.evaluate(4);
-        myMovie.evaluate(7);
-
-        myMovie.setIncludedInThePlan(true);
-        System.out.println(myMovie.getName());
-
-
-        System.out.println(myMovie.getAssessment());
-        System.out.println(myMovie.averageRating());
-        System.out.println(myMovie.getTotalRatings());
-
-
+        System.out.println("O tempo necessario para maratonar " + calculator.getTotalTime());
     }
 }

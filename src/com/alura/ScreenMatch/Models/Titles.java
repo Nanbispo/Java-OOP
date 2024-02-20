@@ -1,6 +1,6 @@
 package com.alura.ScreenMatch.Models;
 
-public class Movie {
+public class Titles {
     public String name;
     private int releaseYear;
     private int durationInMinutes;
@@ -8,11 +8,11 @@ public class Movie {
     private double assessment;
     private int totalRatings;
 
-    public int getTotalRatings(){
+    public int getTotalRatings() {
         return totalRatings;
     }
 
-    public double getAssessment(){
+    public double getAssessment() {
         return assessment;
     }
 
@@ -61,4 +61,5 @@ public class Movie {
     public double averageRating() {
         return assessment / totalRatings;
     }
+
 }

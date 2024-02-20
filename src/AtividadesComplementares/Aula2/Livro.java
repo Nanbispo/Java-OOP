@@ -1,8 +1,8 @@
 package AtividadesComplementares.Aula2;
 
 public class Livro {
-    String titulo = "";
-    String autor = "";
+    String titulo;
+    String autor;
 
     public String getTitulo() {
         return titulo;
