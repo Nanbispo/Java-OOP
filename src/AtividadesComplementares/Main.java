@@ -1,8 +1,8 @@
 package AtividadesComplementares;
 
-import AtividadesComplementares.Aula2.Aluno;
-import AtividadesComplementares.Aula2.Livro;
-import AtividadesComplementares.Aula2.Produto;
+import AtividadesComplementares.Aula3.Animal;
+import AtividadesComplementares.Aula3.ContaBancaria;
+import AtividadesComplementares.Aula3.NumerosPrimos;
 
 public class Main {
     public static void main(String[] args) {
@@ -82,5 +82,37 @@ public class Main {
 //        entendendoAlgoritmos.setTitulo("Entendndo algoritmos");
 //        entendendoAlgoritmos.setAutor("Aditya Y. Bhargava");
 //        entendendoAlgoritmos.fichaDoLivro();
+
+
+        //***************************************************
+        //Terceiro modulo de aulas
+        //***************************************************
+
+        //Primeira atividade
+//        Carro carro = new Carro();
+//        carro.definirModelo("Celta");
+//        carro.definirPrecos(10000.0, 2000.0,3000.0);
+//        carro.exibirInfo();
+
+
+        //Segunda atividade
+//        Animal animal = new Animal();
+//        animal.emitirSom();
+
+
+        //Terceira atividade
+//        ContaBancaria conta = new ContaBancaria();
+//        conta.depositar(1000.0);
+//        conta.consultarSaldo();
+
+
+
+        //Qaurta atividade
+//        NumerosPrimos numeros = new NumerosPrimos();
+//        numeros.listarPrimos(1);
+//        numeros.verificarPrimalidade(4);
+
+
+
     }
 }
