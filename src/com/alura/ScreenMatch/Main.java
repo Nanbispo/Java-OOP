@@ -14,16 +14,20 @@ public class Main {
         ophehaimer.setName("Ophehaimer");
         ophehaimer.setDurationInMinutes(90);
 
+
         Series suits = new Series();
         suits.setName("Suits");
-        suits.setSeasons(10);
+        suits.setReleaseYear(2008);
+        suits.displaysTechnicalSheet();
+        suits.setSeasons(9);
         suits.setEpisodesPerSeason(20);
-        suits.setDurationInMinutes(50);
-        System.out.println("Tempo para maratonar suits "+ suits.getDurationInMinutes());
+        suits.setMinutesPerSeasons(50);
+        System.out.println("minutos de aaaaaaaaaa "+ suits.getDurationInMinutes());
 
         timeCalculator calculator = new timeCalculator();
         calculator.inclued(avatar);
         calculator.inclued(ophehaimer);
+
         calculator.inclued(suits);
 
         System.out.println("O tempo necessario para maratonar " + calculator.getTotalTime());
