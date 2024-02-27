@@ -1,43 +1,29 @@
 package AtividadesComplementares;
 
-import AtividadesComplementares.DesafioFinal.Musicas;
-import AtividadesComplementares.DesafioFinal.Podcast;
-import AtividadesComplementares.DesafioFinal.Preferencias;
+import AtividadesComplementares.segundoCurso.Aula1.Produto;
+
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        Produto cereal = new Produto("Sucrilhos", 20.00, 2);
 
+        Produto arroz = new Produto("Arroz Tio João", 7.00, 3);
 
-        Musicas minhaMusica = new Musicas();
-        minhaMusica.setTitulo("Ywhw se manifestará");
-        minhaMusica.setArtista("TodaMusic");
-        minhaMusica.setAlbum("Gospel");
-        minhaMusica.setGenero("Gospel");
+        Produto cuscuz = new Produto("Cuscuz", 4.40, 2);
 
-        for (int i = 0; i < 10000; i++) {
-            minhaMusica.curte();
+        cuscuz.valorFinal();
+        ArrayList<Produto> lista = new ArrayList();
+
+        lista.add(cereal);
+        lista.add(arroz);
+        lista.add(cuscuz);
+        System.out.println("Tamanho da lista: "+ lista.size());
+        System.out.println("Primeiro item da lista "+ lista.get(0).getNome());
+
+        for (Produto produto : lista){
+            System.out.println(produto);
         }
 
-        for (int i = 0; i < 5000; i++) {
-            minhaMusica.reproduz();
-        }
-        Podcast meuPodcast = new Podcast();
-        meuPodcast.setTitulo("Desenvolvimento Android");
-        meuPodcast.setHost("Lucas Montano");
-        meuPodcast.setDescricao("Entendo o caminho para dev android");
-
-
-        for (int i = 0; i < 6000; i++) {
-            meuPodcast.curte();
-        }
-
-        for (int i = 0; i < 4600; i++) {
-            meuPodcast.reproduz();
-
-        }
-
-        Preferencias preferidas =  new Preferencias();
-        preferidas.inclui(meuPodcast);
-        preferidas.inclui(minhaMusica);
     }
 }

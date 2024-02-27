@@ -8,6 +8,11 @@ public class Titles {
     private double assessment;
     private int totalRatings;
 
+    public Titles(String name, int releaseYear) {
+        this.name = name;
+        this.releaseYear = releaseYear;
+    }
+
     public int getTotalRatings() {
         return totalRatings;
     }
