@@ -1,4 +1,6 @@
-package AtividadesComplementares.segundoCurso.Aula1;
+package AtividadesComplementares.segundoCurso.Aula2;
+
+import AtividadesComplementares.segundoCurso.Aula2.Produto;
 
 public class ProdutoPerecivel extends Produto {
     String dataValidade;

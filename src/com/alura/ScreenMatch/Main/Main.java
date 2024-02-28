@@ -1,4 +1,4 @@
-package com.alura.ScreenMatch;
+package com.alura.ScreenMatch.Main;
 
 import com.alura.ScreenMatch.Calculate.timeCalculator;
 import com.alura.ScreenMatch.Models.Movies;

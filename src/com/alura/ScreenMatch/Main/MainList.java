@@ -30,9 +30,9 @@ public class MainList {
                 System.out.println("Classificação: " + movie.getClassification());
             }
         }
-
-        /*a partir do Java 8, foi adicionado na interface List, a qual a classe ArrayList implementa,
-        um novo método chamado forEach, que possibilita a iteração sobre os elementos da lista de forma mais concisa e elegante.*/
-//        List.forEach(item -> System.out.println(item));
     }
 }
+/*a partir do Java 8, foi adicionado na interface List, a qual a classe ArrayList implementa,
+um novo método chamado forEach, que possibilita a iteração sobre os elementos da lista de forma mais concisa e elegante.*/
+//        List.forEach(item -> System.out.println(item));
+
