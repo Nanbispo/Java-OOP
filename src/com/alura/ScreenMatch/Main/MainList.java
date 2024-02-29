@@ -4,7 +4,7 @@ import com.alura.ScreenMatch.Models.Movies;
 import com.alura.ScreenMatch.Models.Series;
 import com.alura.ScreenMatch.Models.Titles;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class MainList {
     public static void main(String[] args) {
@@ -18,11 +18,11 @@ public class MainList {
         suits.evaluate(10);
 
 
-        ArrayList<Titles> List = new ArrayList<>();
-        List.add(avatar);
-        List.add(ophehaimer);
+        List<Titles> List = new LinkedList<>();
         List.add(ragnarok);
         List.add(suits);
+        List.add(avatar);
+        List.add(ophehaimer);
 
         for (Titles item: List){
             System.out.println(item.getName());
@@ -30,6 +30,13 @@ public class MainList {
                 System.out.println("Classificação: " + movie.getClassification());
             }
         }
+/*implementação do meotodo compareable para ordenação dos componentes por ordem alfabetica*/
+        Collections.sort(List);
+        System.out.println("Lista ordenada: " + List);
+
+
+        List.sort(Comparator.comparing(Titles::getReleaseYear));
+        System.out.println("Lista ordenada por ano de lançamento: " + List);
     }
 }
 /*a partir do Java 8, foi adicionado na interface List, a qual a classe ArrayList implementa,

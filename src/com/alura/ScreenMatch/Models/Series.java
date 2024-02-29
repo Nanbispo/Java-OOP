@@ -45,4 +45,10 @@ public class Series extends Titles{
     public int getDurationInMinutes(){
         return seasons * episodesPerSeason * minutesPerEpisodes;
     }
+
+    @Override
+    public String toString() {
+        return "Série: " + getName() + "(" + getReleaseYear() + ")";
+    }
 }
+
